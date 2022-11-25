@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/top_left_bg"
+        android:backgroundTint="#a280ec"
+        android:translationZ="1px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:translationZ="2px"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:tint="@color/black"
+            android:scaleX="-1"
+            android:src="@drawable/shoppingcart"
+            android:contentDescription="Shopping Cart"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_back_arrow"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:layout_marginTop="15dp"
+        android:background="#2e2e2e"
+        android:src="@drawable/item3"
+        app:layout_constraintTop_toBottomOf="@+id/backbtn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="13pt"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="AK47 - ASIIMOV"
+                android:textColor="#000000"
+                android:textSize="9pt"
+                android:layout_marginLeft="7pt"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="12pt"
+                android:layout_marginLeft="7pt"
+                android:fontFamily="@font/poppins"
+                android:text="Counter Strike: Global Offensive"
+                android:textColor="#8A8A8A"
+                android:textSize="7pt"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7pt"
+                android:background="@drawable/round"
+                android:backgroundTint="#a280ec"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingVertical="2dp"
+                android:paddingHorizontal="10dp"
+                android:text="Rp. 29.999"
+                android:textColor="@color/white"
+                android:textSize="9pt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Per 1 Day"
+                android:textColor="#000000"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView2"
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:layout_marginLeft="7pt"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/kyursetor"
+                android:theme="@style/roundedImageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginLeft="13dp"
+                android:backgroundTint="#2e2e2e"
+                android:fontFamily="@font/poppins_bold"
+                android:text="KyuraStore"
+                android:textColor="#000000"
+                android:textSize="6pt"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textColor="#44E400"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="11pt"
+                android:layout_marginLeft="7pt"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Skin Description"
+                android:textColor="#000000"
+                android:textSize="7pt"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+
+                android:layout_marginLeft="7pt"
+                android:layout_marginRight="7pt"
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="7pt"
+                android:paddingTop="8dp"
+                android:paddingBottom="10dp"
+                android:text="Designed for efficient brutality, using a push dagger is as simple as throwing a punch or two. It has been spray-painted using a tangle of masking tape as a stencil. True power is demonstrated with subtle application."
+                android:textColor="#000000"
+                android:textSize="6pt"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/text69"
+                android:layout_width="match_parent"
+                android:layout_height="11pt"
+                android:layout_marginLeft="7pt"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Similar Items You May Like"
+                android:textColor="#000000"
+                android:textSize="7pt"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+
+            <HorizontalScrollView
+                android:layout_marginTop="5pt"
+                android:id="@+id/horiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text69"
+                >
+
+                <LinearLayout
+                    android:id="@+id/sekin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginLeft="7pt"
+                android:layout_width="65pt"
+                android:layout_height="70pt"
+                android:background="@drawable/radius"
+                android:backgroundTint="#EEEEEE">
+
+                <ImageView
+                    android:id="@+id/ak1"
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/item6" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/ak1"
+                    android:text="Bloodsport"/>
+
+
+            </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginLeft="7pt"
+                        android:layout_width="65pt"
+                        android:layout_height="70pt"
+                        android:background="@drawable/radius"
+                        android:backgroundTint="#EEEEEE">
+
+                        <ImageView
+                            android:id="@+id/ak2"
+                            android:layout_width="50pt"
+                            android:layout_height="50pt"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/item7" />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ak2"
+                            android:text="Vulcan"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="7pt"
+                        android:layout_width="65pt"
+                        android:layout_height="70pt"
+                        android:background="@drawable/radius"
+                        android:backgroundTint="#EEEEEE">
+
+                        <ImageView
+                            android:id="@+id/ak3"
+                            android:layout_width="50pt"
+                            android:layout_height="50pt"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/item8" />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ak3"
+                            android:text="Gold Arabes"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="7pt"
+                        android:layout_width="65pt"
+                        android:layout_height="70pt"
+                        android:background="@drawable/radius"
+                        android:backgroundTint="#EEEEEE">
+
+                        <ImageView
+                            android:id="@+id/ak4"
+                            android:layout_width="50pt"
+                            android:layout_height="50pt"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/item9" />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ak4"
+                            android:text="Neon Rider"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="7pt"
+                        android:layout_marginRight="7pt"
+                        android:layout_width="65pt"
+                        android:layout_height="70pt"
+                        android:background="@drawable/radius"
+                        android:backgroundTint="#EEEEEE">
+
+                        <ImageView
+                            android:id="@+id/ak5"
+                            android:layout_width="50pt"
+                            android:layout_height="50pt"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/item10" />
+
+                        <TextView
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ak5"
+                            android:text="Nightwish"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#a280ec"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#8065BA"
+            android:text="RENT" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#B593FF"
+            android:text="DURATION" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

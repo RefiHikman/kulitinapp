@@ -1,0 +1,6 @@
+<shape android:height="24dp"
+    android:viewportHeight="24" android:viewportWidth="24"
+    android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
+    <solid android:color="#A280EC" />
+</shape>
